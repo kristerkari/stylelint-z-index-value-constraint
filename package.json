@@ -1,0 +1,134 @@
+{
+  "name": "stylelint-z-index-value-constraint",
+  "version": "1.0.0",
+  "description": "Stylelint rule for setting minimum and maximum constraint value for z-index.",
+  "main": "index.js",
+  "author": {
+    "name": "Krister Kari",
+    "url": "https://github.com/kristerkari/"
+  },
+  "license": "MIT",
+  "files": ["index.js", "CHANGELOG.md", "README.md"],
+  "scripts": {
+    "jest": "jest",
+    "lint": "eslint . --ignore-path .gitignore",
+    "precommit": "lint-staged",
+    "pretest": "npm run lint",
+    "prettify": "prettier --write '**/*.{js,json,md}'",
+    "release": "npmpub",
+    "test": "jest --coverage"
+  },
+  "peerDependencies": {
+    "stylelint": "^7.0.0 || ^8.0.0 || ^9.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.7.1",
+    "eslint-plugin-sort-requires": "^2.1.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.2",
+    "jest-cli": "^22.4.2",
+    "lint-staged": "^7.0.0",
+    "npmpub": "^3.1.0",
+    "prettier": "^1.11.1",
+    "stylelint": "^8.4.0"
+  },
+  "engines": {
+    "node": ">=4.2.1"
+  },
+  "keywords": [
+    "css",
+    "less",
+    "lint",
+    "linter",
+    "scss",
+    "stylelint",
+    "stylelint-plugin",
+    "sugarss",
+    "z-index"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristerkari/stylelint-z-index-value-constraint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kristerkari/stylelint-z-index-value-constraint/issues"
+  },
+  "homepage": "https://github.com/kristerkari/stylelint-z-index-value-constraint#readme",
+  "lint-staged": {
+    "**/*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "env": {
+      "es6": true,
+      "jest": true,
+      "node": true
+    },
+    "plugins": [
+      "sort-requires"
+    ],
+    "globals": {
+      "testRule": true
+    },
+    "rules": {
+      "eqeqeq": "error",
+      "no-use-before-define": [
+        "error",
+        "nofunc"
+      ],
+      "sort-requires/sort-requires": "error",
+      "strict": [
+        "error",
+        "global"
+      ],
+      "arrow-spacing": "error",
+      "no-var": "error",
+      "object-shorthand": "error",
+      "prefer-const": "error",
+      "template-curly-spacing": "error"
+    }
+  },
+  "jest": {
+    "clearMocks": true,
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "coverageDirectory": "./coverage/",
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 75,
+        "functions": 75,
+        "lines": 75,
+        "statements": 75
+      }
+    },
+    "testEnvironment": "node",
+    "setupFiles": [
+      "./jest-setup.js"
+    ]
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "avoid"
+  }
+}
