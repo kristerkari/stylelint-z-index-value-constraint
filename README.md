@@ -30,8 +30,8 @@ Add this config to your `.stylelintrc`:
   "plugins": ["stylelint-z-index-value-constraint"],
   "rules": [
     "plugin/z-index-value-constraint": {
-      "min": 10,
-      "max": 9999
+      "min": 1,
+      "max": 10
     }
   ]
 }
