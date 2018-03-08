@@ -8,7 +8,11 @@
     "url": "https://github.com/kristerkari/"
   },
   "license": "MIT",
-  "files": ["index.js", "CHANGELOG.md", "README.md"],
+  "files": [
+    "index.js",
+    "CHANGELOG.md",
+    "README.md"
+  ],
   "scripts": {
     "jest": "jest",
     "lint": "eslint . --ignore-path .gitignore",
