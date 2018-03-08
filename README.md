@@ -24,7 +24,7 @@ yarn add stylelint-z-index-value-constraint --dev
 
 Add this config to your `.stylelintrc`:
 
-```json
+```
 {
   "plugins": ["stylelint-z-index-value-constraint"],
   "rules": [
@@ -89,7 +89,7 @@ input {
 
 ```css
 a {
-  z-index: 10;
+  z-index: -10;
 }
 input {
   z-index: -25;
