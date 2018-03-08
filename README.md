@@ -1,5 +1,6 @@
 # stylelint-z-index-value-constraint
 
+[![NPM version](https://img.shields.io/npm/v/stylelint-z-index-value-constraint.svg)](https://www.npmjs.com/package/stylelint-z-index-value-constraint)
 [![Build Status](https://travis-ci.org/kristerkari/stylelint-z-index-value-constraint.svg?branch=master)](https://travis-ci.org/kristerkari/stylelint-z-index-value-constraint)
 [![Build status](https://ci.appveyor.com/api/projects/status/uuutq5xq74a8ko4i/branch/master?svg=true)](https://ci.appveyor.com/project/kristerkari/stylelint-z-index-value-constraint/branch/master)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
