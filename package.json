@@ -34,7 +34,7 @@
     "stylelint": "^8.4.0"
   },
   "engines": {
-    "node": ">=4.2.1"
+    "node": ">=6"
   },
   "keywords": [
     "css",
