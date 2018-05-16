@@ -30,12 +30,12 @@ Add this config to your `.stylelintrc`:
 ```
 {
   "plugins": ["stylelint-z-index-value-constraint"],
-  "rules": [
+  "rules": {
     "plugin/z-index-value-constraint": {
       "min": 1,
       "max": 10
     }
-  ]
+  }
 }
 ```
 
