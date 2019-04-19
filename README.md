@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.org/kristerkari/stylelint-z-index-value-constraint.svg?branch=master)](https://travis-ci.org/kristerkari/stylelint-z-index-value-constraint)
 [![Build status](https://ci.appveyor.com/api/projects/status/uuutq5xq74a8ko4i/branch/master?svg=true)](https://ci.appveyor.com/project/kristerkari/stylelint-z-index-value-constraint/branch/master)
 [![Downloads per month](https://img.shields.io/npm/dm/stylelint-z-index-value-constraint.svg)](http://npmcharts.com/compare/stylelint-z-index-value-constraint)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
 
 Stylelint rule for setting minimum and maximum constraint value for z-index.
 
