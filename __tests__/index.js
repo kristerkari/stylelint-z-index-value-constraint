@@ -186,3 +186,21 @@ testRule(rule, {
     }
   ]
 });
+
+testRule(rule, {
+  ruleName,
+  config: [
+    {
+      min: 10
+    },
+    { severity: "error" }
+  ],
+  skipBasicChecks: true,
+
+  accept: [
+    {
+      code: "a { z-index:10; }",
+      description: "z-index value that is the same as min limit"
+    }
+  ]
+});

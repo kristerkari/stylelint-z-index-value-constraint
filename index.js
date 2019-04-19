@@ -57,7 +57,9 @@ module.exports = stylelint.createPlugin(ruleName, function(options, secondary) {
 
       if (
         _isNaN(value) ||
-        (secondary && secondary.ignoreValues.indexOf(value) > -1)
+        (secondary &&
+          Array.isArray(secondary.ignoreValues) &&
+          secondary.ignoreValues.indexOf(value) > -1)
       ) {
         return;
       }
