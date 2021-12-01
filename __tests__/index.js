@@ -1,9 +1,7 @@
 const messages = require("..").messages;
 const ruleName = require("..").ruleName;
 
-const rule = require("..");
-
-testRule(rule, {
+testRule({
   ruleName,
   config: {
     min: 10
@@ -39,7 +37,7 @@ testRule(rule, {
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
   config: {
     max: 9999
@@ -74,7 +72,7 @@ testRule(rule, {
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
   config: {
     min: 2,
@@ -123,7 +121,7 @@ testRule(rule, {
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
   config: [
     {
@@ -187,7 +185,7 @@ testRule(rule, {
   ]
 });
 
-testRule(rule, {
+testRule({
   ruleName,
   config: [
     {
