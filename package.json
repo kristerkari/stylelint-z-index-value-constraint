@@ -29,7 +29,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.31.0",
     "eslint-plugin-sort-requires": "^2.1.0",
-    "husky": "^7.0.1",
+    "husky": "^8.0.2",
     "jest": "^27.0.6",
     "jest-cli": "^27.0.6",
     "jest-preset-stylelint": "^5.0.4",
