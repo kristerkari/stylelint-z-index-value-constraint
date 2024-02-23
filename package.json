@@ -25,9 +25,8 @@
     "stylelint": "^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.3",
-    "eslint": "^7.31.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-sort-requires": "^2.1.0",
     "husky": "^8.0.2",
     "jest": "^29.3.1",
@@ -67,10 +66,9 @@
     ]
   },
   "eslintConfig": {
-    "parser": "babel-eslint",
     "extends": "eslint:recommended",
     "parserOptions": {
-      "ecmaVersion": 6
+      "ecmaVersion": "latest"
     },
     "env": {
       "es6": true,
@@ -90,10 +88,7 @@
         "nofunc"
       ],
       "sort-requires/sort-requires": "error",
-      "strict": [
-        "error",
-        "global"
-      ],
+      "strict": "off",
       "arrow-spacing": "error",
       "no-var": "error",
       "object-shorthand": "error",
