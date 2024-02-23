@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: [16, 18]
+        node: [20]
         os: [ubuntu-latest, windows-latest]
 
     steps:
@@ -30,4 +30,4 @@ jobs:
         run: yarn lint
 
       - name: Run jest tests with coverage
-        run: yarn jest --runInBand --coverage
+        run: yarn test
