@@ -14,19 +14,19 @@
     "README.md"
   ],
   "scripts": {
-    "jest": "jest",
     "lint": "eslint . --ignore-path .gitignore",
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "prettify": "prettier --write '**/*.{js,json,md}'",
     "release": "np",
-    "test": "jest --coverage"
+    "test": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest --coverage"
   },
   "peerDependencies": {
     "stylelint": "^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
     "eslint": "^7.31.0",
     "eslint-plugin-sort-requires": "^2.1.0",
     "husky": "^8.0.2",
@@ -36,7 +36,7 @@
     "lint-staged": "^13.1.0",
     "np": "^8.0.4",
     "prettier": "^3.0.0",
-    "stylelint": "^15.0.0"
+    "stylelint": "^16.2.1"
   },
   "engines": {
     "node": ">=6"
