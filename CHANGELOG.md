@@ -1,3 +1,7 @@
+## v1.4.0
+
+- Added: support for stylelint version 16.
+
 ## v1.3.0
 
 - Added: support for stylelint version 15.
