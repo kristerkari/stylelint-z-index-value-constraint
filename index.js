@@ -1,4 +1,4 @@
-const stylelint = require("stylelint");
+import stylelint from "stylelint";
 
 const ruleName = "plugin/z-index-value-constraint";
 
@@ -27,7 +27,7 @@ function possibleValueTest(value) {
   return isNumber(value) && !isNegative(value);
 }
 
-module.exports = stylelint.createPlugin(ruleName, (options, secondary) => {
+const rule = stylelint.createPlugin(ruleName, (options, secondary) => {
   return (cssRoot, result) => {
     const validOptions = stylelint.utils.validateOptions(
       result,
@@ -89,5 +89,5 @@ module.exports = stylelint.createPlugin(ruleName, (options, secondary) => {
   };
 });
 
-module.exports.ruleName = ruleName;
-module.exports.messages = messages;
+export default rule;
+export { ruleName, messages };
