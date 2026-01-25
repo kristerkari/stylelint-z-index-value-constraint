@@ -17,7 +17,7 @@
     "lint": "eslint .",
     "precommit": "lint-staged",
     "pretest": "npm run lint",
-    "prettify": "prettier --write '**/*.{js,json,md}'",
+    "prettify": "prettier --write '**/*.{cjs,js,json,md,mjs}'",
     "release": "np",
     "test": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest --coverage"
   },
