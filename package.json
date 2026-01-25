@@ -19,7 +19,7 @@
     "precommit": "lint-staged",
     "pretest": "npm run lint",
     "prettify": "prettier --write '**/*.{cjs,js,json,md,mjs}'",
-    "release": "np",
+    "release": "npx np",
     "test": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest --coverage"
   },
   "peerDependencies": {
@@ -36,7 +36,6 @@
     "jest-cli": "^30.2.0",
     "jest-preset-stylelint": "^7.0.0",
     "lint-staged": "^16.2.7",
-    "np": "^10.0.0",
     "prettier": "^3.0.0",
     "stylelint": "^17.0.0"
   },
